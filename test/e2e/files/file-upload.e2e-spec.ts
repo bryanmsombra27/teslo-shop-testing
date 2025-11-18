@@ -76,8 +76,6 @@ describe('file-upload.e2e-spec', () => {
       '/files/product/non-product-image.jpg',
     );
 
-    console.log(response.body);
-
     expect(response.status).toBe(400);
     expect(response.body).toEqual({
       message: 'No product found with image non-product-image.jpg',
